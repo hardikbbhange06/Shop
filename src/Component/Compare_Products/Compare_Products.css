@@ -1,0 +1,25 @@
+.ompare_Products{
+    margin-left: -130px !important;
+
+}
+.MSI_has{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .ompare_Products{
+        margin-left:0px !important;
+        width: 339px !important;
+        justify-content: center;
+       text-align: center;
+
+    }
+    .You_have{
+        width: 352px !important;
+
+    }
+    .MSI_has{
+        display:block;
+    }
+   
+  }

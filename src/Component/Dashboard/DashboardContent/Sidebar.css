@@ -1,0 +1,39 @@
+.dash {
+    margin-left: -130px !important;
+    
+  }
+
+  .BOX_2525{
+    width: 400px;
+    border: 2px solid green;
+  }
+
+  /* .sidebar{
+    display: block;
+  } */
+
+
+@media (max-width: 600px) {
+    .dash {
+      margin-left: 1px !important;
+    }
+  }
+
+  /* @media (max-width: 600px) {
+    .dash {
+      display: none;
+    }
+  
+    .dash.visible {
+      display: block;
+    }
+  } */
+
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none; /* Hide the sidebar on screens with a maximum width of 600px */
+    }
+  }
+
+
+ 

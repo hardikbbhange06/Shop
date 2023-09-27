@@ -15,6 +15,11 @@ import AdbIcon from "@mui/icons-material/Adb";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import logo from "../IMG/Logo-2.png"
+
+
+
+
 
 const pages = [
   "Mon-Thu:  9:00 AM - 5:30 PM ▼ ",
@@ -42,11 +47,13 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static"
-    sx={{
-        backgroundColor:   'rgba(2, 2, 2, 1)',
-        color: 'rgba(255, 255, 255, 1)',
-      }}>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "rgba(2, 2, 2, 1)",
+        color: "rgba(255, 255, 255, 1)",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -77,34 +84,24 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+            <Box 
+            sx={{
+              backgroundColor:"rgba(1, 86, 255, 1)",
+              borderRadius:"25px",
+              height:"65px",
+width:"45px",
+              position:"absolute",
+              marginTop:"15px"
+            }}>
+            <img src={logo} alt=""  style={{marginTop:"15px" ,color:'green',}} />
+
+            </Box>
+
+              {/* <MenuIcon /> */}
             </IconButton>
-            {/* <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }} */}
-            {/* > */}
-            {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-            {/* </Menu> */}
+            
+            
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             // variant="h6"
             noWrap
@@ -119,6 +116,7 @@ function ResponsiveAppBar() {
               // letterSpacing: '.3rem',
               color: "inherit",
               textDecoration: "none",
+              ml:"22px"
             }}
           >
             Mon-Thu: 9:00 AM - 5:30 PM
@@ -142,7 +140,9 @@ function ResponsiveAppBar() {
           >
             Contact Us
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1,
+           display: { xs: "none", md: "flex" } 
+           }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -168,34 +168,9 @@ function ResponsiveAppBar() {
 
           <Box sx={{}}>
             <>
-              {/* <Typography sx={{display: 'flex',  justifyContent: 'center',textAlign: 'center', }} >
-            Call Us: (00) 1234 5678
-            <FacebookIcon sx={{ml:1,}} />
-            <InstagramIcon  sx={{ml:1,}}/>
-            </Typography> */}
+           
             </>
-            {/* <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
+           
           </Box>
         </Toolbar>
       </Container>

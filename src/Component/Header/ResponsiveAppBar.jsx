@@ -17,6 +17,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Badge, useMediaQuery } from "@mui/material";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import logo from "../IMG/Logo.png"
 
 const pages = [
     "Laptops",
@@ -70,7 +71,11 @@ const pages = [
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+        <img src={logo} alt=""  />
+
+        </Box>
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -86,7 +91,7 @@ const pages = [
               textDecoration: "none",
             }}
           >
-            LOGO
+            {/* LOGO */}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -131,7 +136,7 @@ const pages = [
             </Menu>
           </Box>
 
-          <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}>
+          <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1,bgcolor:"rgba(255, 255, 255, 1)",borderRadius:"25px" }}>
             <IconButton size="large" aria-label="search" color="inherit">
               <SearchIcon />
             </IconButton>
@@ -155,10 +160,7 @@ const pages = [
 
             <Button
               sx={{
-                // width: '121px',
-                // height: '37px',
-                // top: '71px',
-                // left: '1225px',
+               
                 borderRadius: "50px",
                 border: "2px solid rgba(1, 86, 255, 1)",
                 // backgroundColor: 'rgba(1, 86, 255, 1)',

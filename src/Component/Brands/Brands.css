@@ -1,0 +1,19 @@
+.Brands{
+    margin-top: -930px !important;
+    margin-left: -130px !important;
+
+}
+
+@media (max-width: 600px) {
+    .Brands{
+        margin-top:0px !important;
+        margin-left: -1px !important;
+
+    }
+  }
+
+  @media (max-width: 600px) {
+    .Brands {
+      display: none;
+    }
+  }
